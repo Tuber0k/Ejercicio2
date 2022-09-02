@@ -17,7 +17,7 @@ if (nombre == "si") {
     while (cantidadHorExt == null || /\D/.test(cantidadHorExt) || cantidadHorExt == "") {
         cantidadHorExt = prompt("Solo se admiten NUMEROS: ");
     }
-    let anoAntiguedad = antiguedad * 1;
+    let anoAntiguedad = parseInt(porHora) + parseInt(porHora) % parseInt(antiguedad);
     let sumaInterna1 = (porHora * porcentajeHora) / 100;
     let valHoraExtras = parseInt(porHora) + parseInt(sumaInterna1) + parseInt(anoAntiguedad);
     let resultadoHoras = valHoraExtras * cantidadHorExt;
