@@ -29,11 +29,12 @@ if (nombre == "si") {
     let sumaInterna2 = (resultadoHoras * 19) / 100;
     let horasConDesc = resultadoHoras - sumaInterna2;
     alert("La ganacia por tus horas extras en bruto trabajadas, es de $ " + resultadoHoras + "\nLa ganancia neta por tus horas extras trabajadas es de $ " + horasConDesc);
-}
-else if (nombre != "si" || "no") {
-    alert("Respuesta no esperada")
+}else if (nombre !== "si" && nombre !== "no") {
+    alert("Respuesta no esperada");
+}else if (nombre == "no"){
+    alert("Vuelvas pronto");
 }else{
-    alert("El dato ingresado es incorrecto, se esperaba un numero.")
+    alert("El dato ingresado es incorrecto, se esperaba un numero.");
 } 
 
 
