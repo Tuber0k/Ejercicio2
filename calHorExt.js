@@ -5,7 +5,7 @@ if (nombre == "si") {
     while (porHora == null || /\D/.test(porHora) || porHora == "") {
         porHora = prompt("Solo se admiten NUMEROS: ");
     }
-    let antiguedad = prompt("Ingresa los años de antiguedad en tu trabajo.")
+    let antiguedad = prompt("Ingresa el valor por hora de tus años de antiguedad en tu trabajo.")
     while (antiguedad == null || /\D/.test(antiguedad) || antiguedad == "") {
         antiguedad = prompt("Solo se admiten NUMEROS: ");
     }
@@ -18,13 +18,13 @@ if (nombre == "si") {
         cantidadHorExt = prompt("Solo se admiten NUMEROS: ");
     }
     
-    function sumaAntiguedad(antiguedad, porHora,) {
-        return parseInt(porHora) + parseInt(porHora) % parseInt(antiguedad);
-    }
-    let anoAntiguedad = sumaAntiguedad( antiguedad, porHora)
+    // function sumaAntiguedad(antiguedad, porHora,) {
+    //     return parseInt(porHora) + parseInt(porHora) % parseInt(antiguedad);
+    // }
+    // let anoAntiguedad = sumaAntiguedad( antiguedad, porHora)
 
     let sumaInterna1 = (porHora * porcentajeHora) / 100;
-    let valHoraExtras = parseInt(porHora) + parseInt(sumaInterna1) + parseInt(anoAntiguedad);
+    let valHoraExtras = parseInt(porHora) + parseInt(sumaInterna1) + parseInt(antiguedad);
     let resultadoHoras = valHoraExtras * cantidadHorExt;
     let sumaInterna2 = (resultadoHoras * 19) / 100;
     let horasConDesc = resultadoHoras - sumaInterna2;
